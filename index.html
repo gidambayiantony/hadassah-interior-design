@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hadassah Interior Design</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Hadassah Interior Design</div>
+  <nav>
+    <ul>
+      <li><a href="#homepage">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="dropdown">
+        <button onclick="toggleDropdown()">Services &#9660;</button>
+        <ul id="dropdownList">
+          <li><a href="#residential-design">Residential Design</a></li>
+          <li><a href="#commercial-design">Commercial Design</a></li>
+          <li><a href="#consultations">Consultations</a></li>
+          <li><a href="#styling">Styling</a></li>
+        </ul>
+      </li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+  </nav>
+  <div class="social-media">
+    <ul>
+      <li><a href="social-link">Facebook</a></li>
+      <li><a href="social-link">Instagram</a></li>
+      <li><a href="social-link">Twitter</a></li>
+    </ul>
+  </div>
+</header>
+
+<section id="homepage">
+  <h1>Welcome to Hadassah Interior Design</h1>
+  <h2>Your one-stop shop for all your interior design needs</h2>
+  <p>We offer a wide range of services, from residential and commercial design to consultations and styling.</p>
+  <a href="#about">Learn more about us</a>
+  <a href="#portfolio">View our work</a>
+</section>
+
+<section id="about">
+  <h1>About Hadassah</h1>
+  <p>Hadassah is an award-winning interior designer with over 10 years of experience.</p>
+  <p>Known for unique and innovative designs, she's passionate about creating functional spaces.</p>
+  <a href="#services">View our services</a>
+</section>
+
+<section id="portfolio">
+  <h1>Portfolio</h1>
+  <ul class="gallery">
+    <li><img src="images/project1.jpg" alt="Project 1"></li>
+    <li><img src="images/project2.jpg" alt="Project 2"></li>
+    <li><img src="images/project3.jpg" alt="Project 3"></li>
+    <li><img src="images/project4.jpg" alt="Project 4"></li>
+  </ul>
+</section>
+
+<section id="testimonials">
+  <h1>Testimonials</h1>
+  <ul class="testimonials">
+    <li>"I was so impressed with the work that Hadassah did on my home..." - Client A</li>
+    <li>"Hadassah is a true professional. She was able to work with me on a tight budget..." - Client B</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h1>Contact</h1>
+  <ul class="contact-info">
+    <li><a href="mailto:info@hadassahdesign.com">info@hadassahdesign.com</a></li>
+    <li><a href="tel:123-456-7890">123-456-7890</a></li>
+    <li>123 Main Street, Anytown, CA 12345</li>
+  </ul>
+  <form action="/contact/submit" method="post">
+    <input type="text" name="name" placeholder="Your Name">
+    <input type="email" name="email" placeholder="Your Email">
+    <textarea name="message" placeholder="Your Message"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</section>
+
+<footer>
+  <div class="footer-icons">
+    <ul>
+      <li><a href="social-link">Facebook</a></li>
+      <li><a href="social-link">Instagram</a></li>
+      <li><a href="social-link">Twitter</a></li>
+    </ul>
+  </div>
+  <div class="copyright">
+    &copy; 2023 Hadassah Interior Design
+  </div>
+</footer>
+
+<script>
+function toggleDropdown() {
+  var dropdownList = document.getElementById("dropdownList");
+  if (dropdownList.style.display === "none") {
+    dropdownList.style.display = "block";
+  } else {
+    dropdownList.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
