@@ -1,102 +1,178 @@
-/* Reset default browser styles if needed */
-
-/* General styling for the site */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: sans-serif;
+  background-color: #ffffff;
 }
 
-/* Header styles */
 header {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
-  font-size: 1
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-image: url(images/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
+nav {
+  float: right;
+  margin-top: 20px;
+}
 
-  nav ul li {
-    margin-right: 20px;
-  }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  .dropdown {
-    position: relative;
-  }
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
 
-  .dropdown ul {
-    display: none;
-    position: absolute;
-    background: #fff;
-    padding: 10px;
-  }
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
 
-  .dropdown:hover ul {
-    display: block;
-  }
+nav a:hover {
+  color: #ffffff;
+}
 
-  .social-media ul {
-    list-style: none;
-    display: flex;
-  }
+.social-media {
+  float: right;
+  margin-top: 20px;
+}
 
-  .social-media ul li {
-    margin-right: 10px;
-  }
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  /* Other sections and their styling */
+.social-media li {
+  display: inline-block;
+  padding: 10px;
+}
 
-  section {
-    padding: 40px;
-  }
+.social-media a {
+  text-decoration: none;
+  color: #000000;
+}
 
-  section h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
+.social-media a:hover {
+  color: #ffffff;
+}
 
-  section h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
+footer {
+  background-color: #ffffff;
+  padding: 20px;
+}
 
-  section p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
+.copyright {
+  text-align: center;
+}
 
-  /* Footer styles */
-  footer {
-    background: #333;
-    color: #fff;
+section {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery li {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonials li {
+  width: 500px;
+  margin: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info li {
+  width: 500px;
+  margin: 10px;
+}
+
+form {
+  width: 500px;
+  margin: 10px auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  nav,
+  .social-media {
+    float: none;
     text-align: center;
-    padding: 20px;
   }
 
-  .footer-icons ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+  footer {
+    text-align: center;
   }
-
-  .footer-icons ul li {
-    margin-right: 10px;
-  }
-
-  .copyright {
-    font-size: 14px;
-  }
+}
