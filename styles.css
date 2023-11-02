@@ -5,12 +5,12 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+  background: grey;
 }
 
 /* Header styles */
 header {
-  background-color: #ffa500; /* Orange background for the header */
+  background-color: orange; /* Orange background for the header */
   padding: 20px;
   display: flex;
   justify-content: space-between;
